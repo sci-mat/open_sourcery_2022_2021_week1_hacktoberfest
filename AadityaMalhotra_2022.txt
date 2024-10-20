@@ -1,3 +1,9 @@
+#include <iostream>
+#include <unordered_map>
+#include <string> 
+
+using namespace std;
+
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
@@ -18,3 +24,16 @@ public:
         return maxLength;
     }
 };
+
+int main() {
+    Solution solution;
+    
+    string s;
+    cout << "Enter a string: ";
+    cin >> s;
+    
+    int result = solution.lengthOfLongestSubstring(s);
+    cout << "Length of longest substring without repeating characters: " << result << endl;
+    
+    return 0;
+}
